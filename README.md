@@ -112,19 +112,26 @@ python chat.py -i   # 交互
 
 ```
 voice-chat-demo_0.1/
-├── chat.py                    # 主程序文件
+├── .gitignore                 # 忽略大文件
+├── download_models.sh         # 模型下载脚本
+├── chat.py                    # 主程序
 ├── simple_asr.py             # ASR模块
 ├── local_llm.py              # LLM模块
 ├── edge_tts_config.py        # TTS模块
-├── requirements.txt           # Python依赖
-├── install_dependencies.sh    # 依赖安装脚本
+├── requirements.txt           # 依赖列表
 ├── README.md                 # 项目说明
 ├── USAGE.md                  # 使用指南
-├── LICENSE                   # 许可证
-└── models/                   # 模型文件目录
-    ├── pyAudioAnalysis/      # 音频分析库
-    ├── SenseVoiceSmall/      # 语音识别模型
-    └── llm/                 # 本地 LLM（model.gguf）
+└── models/
+    ├── llm/
+    │   └── README.md         # LLM下载说明
+    ├── SenseVoiceSmall/
+    │   ├── README.md         # SenseVoice下载说明
+    │   ├── config.yaml       # 配置文件
+    │   ├── configuration.json # 配置文件
+    │   ├── tokens.json       # 词汇表
+    │   ├── chn_jpn_yue_eng_ko_spectok.bpe.model # 分词器
+    │   └── am.mvn            # 音频归一化
+    └── pyAudioAnalysis/      # 音频分析库
 ```
 
 ## 🔧 配置说明
