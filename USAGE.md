@@ -21,13 +21,18 @@ pip install -r requirements.txt
 # cd models/pyAudioAnalysis && pip install -e . && cd ../..
 ```
 
-### 2. 准备本地 LLM 模型（GGUF）
+### 2. 下载模型文件
 
-- 下载一个聊天微调的 GGUF 模型（建议体积≈1GB）：
-  - 例如：Qwen2.5-1.5B-Instruct-Q4_K_M.gguf（Hugging Face 可获取）
-- 放置为：`./models/llm/model.gguf`
+**自动下载（推荐）**：
+```bash
+./download_models.sh
+```
 
-完成后，系统会自动优先使用本地 LLM。
+**手动下载**：
+- **SenseVoice**: 运行 `python -c "from modelscope import snapshot_download; snapshot_download('iic/SenseVoiceSmall')"`
+- **LLM**: 下载 Qwen2.5-1.5B-Instruct-Q4_K_M.gguf 到 `models/llm/model.gguf`
+
+完成后，系统会自动优先使用本地模型。
 
 ### 3. 运行语音聊天系统
 
