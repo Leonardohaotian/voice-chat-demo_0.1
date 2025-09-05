@@ -145,7 +145,7 @@ LLM_GGUF_PATH  = "./models/llm/model.gguf"     # 本地 LLM 模型
 ### 项目结构（简化后）
 
 ```
-voice_chat_demo/
+voice_chat_demo_0.1/
 ├── chat.py                    # 主程序
 ├── local_llm.py               # 本地 LLM（GGUF）
 ├── simple_asr.py              # SenseVoice ASR + 兜底
