@@ -1,0 +1,18 @@
+# 语音聊天演示所需依赖
+sounddevice>=0.4.6
+numpy>=1.21.0
+pyAudioAnalysis>=0.3.7
+modelscope>=1.9.0
+torch>=1.9.0
+torchaudio>=0.9.0
+transformers>=4.20.0
+onnxruntime>=1.12.0
+
+# 可视化（保留）
+matplotlib>=3.5.0
+
+# 高质量TTS引擎
+edge-tts>=6.1.0
+
+# 本地LLM支持
+llama-cpp-python>=0.2.0
